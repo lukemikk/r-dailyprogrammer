@@ -1,7 +1,10 @@
+# Returns input number with each each digit incremented
 def upVal(val):
+    # Incrementing single digit number is just plus one
     if val < 10:
         return val + 1
     
+    # Mod to extract decimal places of value, and 
     dig = 1
     result = val
     while pow(10, dig) < (result * 10):
